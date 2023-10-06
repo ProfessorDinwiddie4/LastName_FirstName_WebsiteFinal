@@ -1,44 +1,46 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review</title>
-</head>
-<body>
-    <table style="width:100%;max-width: 600px;margin: 0 auto;">
-        <tr>
-            <td colspan="2">
-                <h2 style="text-align: center;">Lorem Ipsum Dolor</h2>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="images/square-image.png" alt="menu item" width="150">
-            </td>
-            <td>
-                <p><strong>Item #1</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum ab quasi dolor voluptates? Soluta quidem ipsam ea tempore laboriosam repudiandae! Perspiciatis exercitationem odio impedit cumque officiis! Ad, ex maxime?</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="images/square-image.png" alt="menu item" width="150">
-            </td>
-            <td>
-                <p><strong>Item #2</strong></p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus vel voluptatem atque ipsum ea libero veniam et nostrum excepturi, dolorum rerum quis! Mollitia sunt unde, tempora fugiat ut dolore. Officia.</p>
-            </td>     
-        </tr>
-        <tr>
-            <td>
-                <img src="images/square-image.png" alt="menu item" width="150">
-            </td>
-            <td>
-                <p><strong>Item #3</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae veritatis magni ex labore nam, culpa assumenda rem eligendi possimus voluptatum doloremque eaque unde distinctio! Molestiae velit inventore neque deserunt amet.</p>
-            </td>     
-        </tr>
-    </table>
-</body>
+    <head>
+        <title>A tribute to Einstein</title>
+        <style>
+            /* global selectors */
+            /* commas apply the properties to multiple selectors */
+            body, p, h1 {
+                margin: 0;
+            }
+
+            /* utilities (not component specific) */
+            .txt-center {
+                text-align: center;
+            }
+            .padded {
+                padding: 32px;
+            }
+
+            /* component specific */
+            .tribute {
+                background-color: rgb(134, 196, 255);
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!-- txt-center centers text and inline elements within the div(refer to CSS) -->
+        <div class="txt-center">
+
+            <!-- tribute class declares a font and a background color-->
+            <div class="tribute padded">
+                <h1>A tribute to Einstein.</h1>
+                <p>A man with great hair</p>
+            </div>
+            
+            <!-- padding adds space between the div and text-level elements on page -->
+            <div class="padded">
+                <img src="images/einstein.jpg" alt="Albert Einsten" width="1200" height="800">
+            </div>
+
+        </div>
+    </body>
 </html>
