@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <title>A tribute to Einstein</title>
-        <style>
-            /* global selectors */
-            /* commas apply the properties to multiple selectors */
-            body, p, h1 {
-                margin: 0;
-            }
-
-            /* utilities (not component specific) */
-            .txt-center {
-                text-align: center;
-            }
-            .padded {
-                padding: 32px;
-            }
-
-            /* component specific */
-            .tribute {
-                background-color: rgb(134, 196, 255);
-                font-family: Helvetica, Arial, sans-serif;
-            }
-            
-        </style>
-    </head>
-    <body>
-        <!-- txt-center centers text and inline elements within the div(refer to CSS) -->
-        <div class="txt-center">
-
-            <!-- tribute class declares a font and a background color-->
-            <div class="tribute padded">
-                <h1>A tribute to Einstein.</h1>
-                <p>A man with great hair</p>
-            </div>
-            
-            <!-- padding adds space between the div and text-level elements on page -->
-            <div class="padded">
-                <img src="images/einstein.jpg" alt="Albert Einsten" width="1200" height="800">
-            </div>
-
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="email.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xwn5qru.css">
+    <title>Email challenge</title>
+  </head>
+  <body>
+    <header>
+      <h2>Sam's Burgers</h2>
+    </header>
+    <main>
+      <section class="hero"></section>
+      <section class="body">
+        <h2 class="align-center mt-0">Top picks of the week</h2>
+        <article class="menu-item">
+          <img src="images/iam_os-AbsF-1.png" alt="Picture of food" width="150px" height="150px">
+          <div class="container">
+            <h4 class="card-title">Greasy burger</h4>
+            <p class="card-text">This is a castle with lots of cool stuff. People love the dragons that live here.</p>
+          </div>
+        </article>
+        <article class="menu-item">
+          <img src="images/iam_os-AbsF0C7R5LE-unsplash.png" alt="Picture of food" width="150px" height="150px">
+          <div class="container">
+            <h4 class="card-title">Greasy burger</h4>
+            <p class="card-text">This is a castle with lots of cool stuff. People love the dragons that live here.</p>
+          </div>
+        </article>
+        <article class="menu-item">
+          <img src="images/sandwhiches.png" alt="Picture of food" width="150px" height="150px">
+          <div class="container">
+            <h4 class="card-title">Greasy burger</h4>
+            <p class="card-text">This is a castle with lots of cool stuff. People love the dragons that live here.</p>
+          </div>
+        </article>
+        <div class="wrapper">
+          <a class="btn">View menu</a>
         </div>
-    </body>
+      </section>
+      <footer class="footer">
+      </footer>
+    </main>
+  </body>
 </html>

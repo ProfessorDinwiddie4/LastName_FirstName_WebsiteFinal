@@ -1,0 +1,95 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ccc;
+  font-family: proxima-nova, sans-serif;
+}
+header {
+  margin: 0 auto;
+  padding: 10px 20px;
+  max-width: 600px;
+  background-color: black;
+  color: white;
+}
+header h2 {
+  font-size: 22px;
+  margin: 0;
+}
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+footer {
+  height: 60px;
+  background-color: #333;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.2rem;
+}
+.hero {
+  position: relative;
+  padding: 48px;
+  height: 400px;
+  background-image: url("images/hero-image-2.jpg");
+  color: white;
+  background-color: rgba(34,31,31, 0.5);
+  background-size: cover;
+}
+.pre, .title, .subtitle {
+  margin:0;
+  color: #fff;
+}
+.pre {
+  font-size: 2.2rem;
+}
+.title {
+  font-size: 5rem;
+  line-height: .8;
+  letter-spacing: 2px;
+}
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.body {
+  padding: 2rem;
+}
+.menu-item {
+  margin-bottom: 1.5em;
+  box-shadow: 0 0 20px #c3c3c3;
+  padding: 1em;
+  display: flex;
+  grid-gap: 1em;
+  width: 100%;
+}
+.card-title {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+.card-text {
+  margin-top: 0;
+}
+.align-center {
+  text-align: center;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.wrapper {
+  text-align: center;
+}
+.btn {
+  padding: 12px 77px;
+  display: inline-block;
+  background-color: #C63D3D;
+  font-weight: bold;
+  font-size: 19px;
+  text-decoration: none;
+  color: white;
+}
