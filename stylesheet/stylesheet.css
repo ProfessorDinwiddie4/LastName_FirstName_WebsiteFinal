@@ -1,232 +1,194 @@
-body {
-    margin: 0;
-    background-color: #F4E1D5;
+.background{
+    background-color: #E8E2D6;
 }
-.grid-container {
-    display: grid;
-}
-.colnav {
-    grid-template-columns: 190px auto;
-    align-items: center;
-    text-align: right;
-}
-.col2 {
-    display: grid;
-    grid-template-areas: "cheftext chefimg";
-    align-items: center;
-    margin: 140px;
-    column-gap: 30px;
-    margin: 90px;
-}
-.col3 {
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    float: left;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
-}
-.colft {
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-}
-.red {
-    background-color: #6A1816;
-}
-.green {
-    background-color: #58652D;
-}
-.logo {
-    height: 100px;
-    max-width: 100px;
-    padding: 14px 37px;
-}
-.nav a {
-    text-align: center;
-    padding: 100px;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 40px;
-    font-family: "trade-gothic-next-condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #F4E1D5;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.column {
+    padding: 10px;
+    text-align: center;
+}
+.column img, .bg-colortop img {
+max-width: 100%;
+height: auto;
+}
+.p {
+    margin-top: 0.5px;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+.bg-color {
+    background-color: #D4836D;
+    margin-bottom: 60px;
   }
-  .nav button {
-    display: none;
-    color: #6A1816;
-    margin-right: 40px;
+  .bg-colorbottom{
+    background-color: #934835;
   }
-  .nav a:hover {
-    color: #58652D;
+.bg-colortop{
+    background-color: #934835;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header {
+     display: grid;
+     justify-content: space-between;
+     grid-template-columns: auto auto;
+     align: center;
+}
+a {
+    text-decoration: none;
+    color: black;
   }
 
-.hero-image {
-    background-image: url(../images/kitchen\ web.jpg);
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-    position: relative;
-}
-.overlay {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-background-color: rgba(88, 101, 45, .73);
-width: 683px;
-height: 341px;
-padding-top: 20px;
-padding-bottom: 20px;
-}
-.button {
-    background-color: #6A1816;
-color: #F4E1D5;
-border-radius: 30px;
-padding: 20px 20px;
-margin-left: 140px;
-font-family: "trade-gothic-next-condensed", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 30px;
-transition-duration: 0.3s;
-cursor: pointer;
-text-decoration: none;
-text-align: center;
-}
-.button:hover {
-    background-color: #C47C7A;
-    color: #F4E1D5;
-}
-.material-symbols-outlined {  
-    font-variation-settings:  
-        'FILL' 1,  
-        'wght' 500,  
-        'GRAD' 0,  
-        'opsz' 25
-}
-h1  {
-    font-family: "de-walpergens-pica", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 100px;
-    color: #F4E1D5;
-    text-align: center;
-    margin-top: 45px;
-    margin-bottom: 0;
-}
-.head-body {
-    font-family: "trade-gothic-next-condensed", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
-    color: #F4E1D5;
-    text-align: left;
-    margin-left: 150px;
-    margin-top: -20px;
-    max-width: 310px;
-}
-h2 {
-    font-family: "trade-gothic-next-condensed", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 50px;
-    color: #58652D;
-    text-align: left;
-}
-h3 {
-    font-family: "trade-gothic-next-condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    color: #F4E1D5;
-    text-align: center;
-}
-h4 {
-    font-family: "trade-gothic-next-condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  .style{
     font-size: 25px;
-    color: black;
-    text-align: left;
+    
+  }
+.font{
+    font-size: 14px;
 }
-.cheftext {
-    font-size: 25px;
-    text-align: center;
-    grid-area: cheftext;
-}
-.plateimg {
-    background-image: url(../images/pancit\ web.jpg);
-    background-size: cover;
-    height: 360px;
-    width: 100%;
-    position: relative;
-    margin-top: 65px;
-}
-.mchimg {
-    width: 300px;
-    margin: 20px;
-}
-footer {
-    padding: 20px;
-}
-.ftbody {
-    font-family: "trade-gothic-next-condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.font2{
     font-size: 20px;
-    color: #F4E1D5;
-    text-align: center;
 }
-@media screen and (max-width:1300px) {
-    .nav a {
-        display: none;
-    }
-    .nav button {
-    display: inline;
-    }
+.font3{
+    font-size: 20px;
+    padding: 20px;
+    padding-right: 40px;
 }
-@media screen and (max-width:648px) {
-    .col3 {
-        grid-template-columns: 1fr;
-    }
-    .col2 {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 20px;
-        margin: 20px;
-        grid-template-areas: 
-        "chefimg"
-        "cheftext";
-    }
-    h1  {
-        font-size: 80px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .head-body {
-        font-size: 25px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .button {
-   display: inline;
+.food{
+    font-size: 23px;
+}
+
+.button {
+    background-color: #C9B087; /* Tan */
+    border: none;
+    color: white;
+    padding: 10px 40px;
     text-align: center;
-    }
-    .plateimg {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition-duration: 0.4s;
+}
+ .button:hover {
+        background-color: #E8E2D6; /* sand */
+        color: white;
+      }
+.b:hover {
+    color: white;
+}
+      .align-center {
+        margin: auto;
         width: 100%;
-        height: 150px;
-        margin-top: 40px;
+        padding: 10px;
+      }
+      div.background {
+        background: url(klematis.jpg) repeat;
+        border: 2px solid black;
+      }
+      
+      div.transbox {
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+      }
+      
+    .image{
+        float: left;;
     }
-    mchimg {
-        width: 110px;
+    .button:hover {
+        background-color: #934835; /* red */
+        color:white;
+    }
+    .padding{
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .row3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section img {
+         max-width: 100%;
+         height: auto;
+    }
+    .section {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+    }
+    .row2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+     }
+     body {
+        font-family:"kristal", sans-serif;
+        margin:0;
+    }
+
+    h1 {
+    text-align: center;
     }
     
-}
-.chefimg {
-    width: 100%;
-    height: auto;
-    grid-area: chefimg;
+    h2 {
+    text-align: left;
+    }
+    
+    h3 {
+    text-align: left;
+    }
+    h4 {
+        margin: 0px;
+    }
+    .max {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+.margin {
+    margin-bottom: 30px;
 }
